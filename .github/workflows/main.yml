@@ -18,6 +18,7 @@ jobs:
        if: always()
      - name: Install packages
        run: |
+        npm install
         npx astro build
      - name: Setup Github Pages
        uses: actions/configure-pages@v5.0.0
