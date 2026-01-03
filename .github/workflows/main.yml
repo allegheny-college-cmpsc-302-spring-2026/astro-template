@@ -14,16 +14,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Checkout
-       uses: actions/checkout@latest
+       uses: actions/checkout@v6.0.1
        if: always()
      - name: Install packages
        run: |
         npx astro build
      - name: Setup Github Pages
-       uses: actions/configure-pages@latest
+       uses: actions/configure-pages@v5.0.0
        if: always()
      - name: Upload artifact archive
-       uses: actions/upload-pages-artifact@latest
+       uses: actions/upload-pages-artifact@v4.0.0
        with:
         path: ./dist
        if: always()
@@ -36,4 +36,4 @@ jobs:
     steps:
       - name: Deploy to Github Pages
         id: deployment
-        uses: actions/deploy-pages@latest
+        uses: actions/deploy-pages@v4.0.5
