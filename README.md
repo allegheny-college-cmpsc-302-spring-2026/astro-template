@@ -3,7 +3,7 @@
 ## Dependencies
 
 This repository uses both `node` and `python`; it contains setup for typical Allegheny College
-CIS department build, including `gatorgrade`. Grader setup is only required for a student's time
+CIS department build using `uv`. Grader setup is only required for a student's time
 in CMPSC 302, and should be removed after the course has been completed.
 
 In addition, this project uses [Playwright](https://playwright.dev/), a testing framework for 
@@ -18,8 +18,8 @@ The easiest way to install and manage your `node` installation is to use `nvm`.
 
 |OS |Repository |
 |:--|:----------|
-|Windows |[https://github.com/coreybutler/nvm-windows?tab=readme-ov-file](nvm-windows) |
-|Apple, Unix |[https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating](nvm) |
+|Windows |[nvm-windows](https://github.com/coreybutler/nvm-windows?tab=readme-ov-file) |
+|Apple, Unix |[nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) |
 
 
 #### `uv`
