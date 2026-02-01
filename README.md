@@ -1,10 +1,16 @@
-# Astro Starter Kit: Minimal
+# Portfolio Starter Kit
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## Dependencies
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This repository uses both `node` and `python`; it contains setup for typical Allegheny College
+CIS department build, including `gatorgrade`. Grader setup is only required for a student's time
+in CMPSC 302, and should be removed after the course has been completed.
+
+## README
+
+This document will be revised as part of coursework. On final submission of this portfolio site,
+this `README` should/will be revised to remove much of the information below, which is provided
+for students to learn more about the build system supporting our work.
 
 ## 🚀 Project Structure
 
