@@ -6,6 +6,82 @@ This repository uses both `node` and `python`; it contains setup for typical All
 CIS department build, including `gatorgrade`. Grader setup is only required for a student's time
 in CMPSC 302, and should be removed after the course has been completed.
 
+In addition, this project uses [Playwright](https://playwright.dev/), a testing framework for 
+web applications, to test and evaluate the end product of various exercises and the overall
+course project.
+
+### Installation
+
+#### `node`
+
+The easiest way to install and manage your `node` installation is to use `nvm`.
+
+|OS |Repository |
+|:--|:----------|
+|Windows |[https://github.com/coreybutler/nvm-windows?tab=readme-ov-file](nvm-windows) |
+|Apple, Unix |[https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating](nvm) |
+
+
+#### `uv`
+
+If you already have `uv` installed _or_ have another installation of Python already installed,
+you can skip this dependency.
+
+##### Mac and Unix
+
+Use `curl` to download and install the package manager:
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+>[!NOTE]
+> In the event of an error, you should also try:
+> ```bash
+> wget -qO- https://astral.sh/uv/install.sh | sh
+> ```
+
+##### Windows
+
+Use `Powershell` to install `uv`:
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+##### Installing `Python`
+
+Use `uv` to install the latest version of Python:
+```bash
+uv python install
+```
+
+To verify your installation, run:
+```bash
+uv run python --version
+```
+
+#### `node` dependencies
+
+Once the above steps are complete, run:
+```bash
+npm install
+```
+
+#### Test your installation
+
+##### `astro`
+
+To test your installation, run:
+```bash
+npm run dev
+```
+
+##### `uv`
+
+To test your installation, and the grader, run:
+```bash
+uv run gatorgrade
+```
+
 ## README
 
 This document will be revised as part of coursework. On final submission of this portfolio site,
