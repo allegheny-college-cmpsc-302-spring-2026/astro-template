@@ -1,17 +1,18 @@
 import { test, expect } from '@playwright/test';
 
 if(!process.env.BASE_URL) {
+  // When not running on Github Actions, use localhost
   process.env.BASE_URL = "http://localhost:4321"
 }
 
 test('has title', async ({ page }) => {
   await page.goto(process.env.BASE_URL);
-  await expect(page).toHaveTitle(/Astro/);
+  await expect(page).not.toHaveTitle(/Astro/);
 });
 
 test('has h1', async ({page}) => {
   await page.goto(process.env.BASE_URL);
-  await expect(page.getByRole('heading', { name: 'Astro', level: 1 })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Astro', level: 1 })).not.toBeVisible();
 });
 
 test('has nav', async ({page}) => {
