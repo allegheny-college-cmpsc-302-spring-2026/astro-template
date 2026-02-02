@@ -5,7 +5,7 @@ on:
     outputs:
       BASE_URL:
         description: "The Github Pages URL for the repository"
-        value: ${{ jobs.deploy.steps.deployment.outputs.page_url }}
+        value: ${{ jobs.deploy.outputs.BASE_URL }}
 
 permissions:
   contents: read
@@ -32,6 +32,8 @@ jobs:
         path: ./dist
        if: always()
   deploy:
+    outputs:
+      BASE_URL: ${{ steps.deployment.outputs.page_url }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
