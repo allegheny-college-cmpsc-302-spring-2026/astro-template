@@ -1,8 +1,11 @@
 name: Build and deploy Astro site
+
 on:
-  push:
-    branches:
-      - main
+  workflow_call:
+    outputs:
+      firstword:
+        description: "The Github Pages URL for the repository"
+        value: ${{ jobs.deploy.deployment.output.page_url }}
 
 permissions:
   contents: read
