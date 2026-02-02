@@ -5,7 +5,7 @@ on:
     outputs:
       BASE_URL:
         description: "The Github Pages URL for the repository"
-        value: ${{ jobs.deploy.deployment.outputs.page_url }}
+        value: ${{ jobs.deploy.steps.deployment.outputs.page_url }}
 
 permissions:
   contents: read
