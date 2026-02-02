@@ -20,7 +20,7 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
       env:
-        BASE_URL: ${{ steps.deployment.outputs.page_url }}
+        BASE_URL: ${{ github.event.repository.owner.login }}.github.io
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
