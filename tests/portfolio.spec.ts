@@ -21,6 +21,12 @@ test('has nav', async ({page}) => {
   await expect(nav).toBeVisible();
 });
 
+test('has and follows links', async ({page}) => {
+  await page.goto(process.env.BASE_URL);
+  await page.getByRole('link', { name: /home/i}).click();
+  await page.getByRole('link', { name: /about/i}).click();
+});
+
 test('has footer', async ({page}) => {
   await page.goto(process.env.BASE_URL);
   const footer = page.locator('footer');
