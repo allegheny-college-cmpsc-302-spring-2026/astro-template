@@ -3,6 +3,18 @@
 [![Gatorgrade](../../actions/workflows/grade.yml/badge.svg?branch=main)](../../actions/workflows/grade.yml)
 [![Playwright Tests](../../actions/workflows/playwright.yml/badge.svg?branch=main)](../../actions/workflows/playwright.yml)
 
+### Enabling Site Build
+
+This site deploys via Github Pages using the Astro static site building system.
+
+1. Go to the `Settings` menu on this repository and locate the `Pages` submenu.
+
+![GitHub Settings, Pages submenu](https://raw.githubusercontent.com/ReadyResearchersTemplates/site-template/media/img/600%20-%20Site%20Template%20-%20Github%20Pages%20Menu.png)
+
+2. On the resulting screen, find the `Build and deployment` menu; select `GitHub Actions`
+
+![GitHub pages, Build and Deployment item](https://raw.githubusercontent.com/ReadyResearchersTemplates/site-template/media/img/600%20-%20Site%20Template%20-%20Github%20Actions%20Menu.png)
+
 ## Dependencies
 
 This repository uses both `node` and `python`; it contains setup for typical Allegheny College
