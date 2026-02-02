@@ -3,7 +3,7 @@ name: Build and deploy Astro site
 on:
   workflow_call:
     outputs:
-      firstword:
+      BASE_URL:
         description: "The Github Pages URL for the repository"
         value: ${{ jobs.deploy.deployment.outputs.page_url }}
 

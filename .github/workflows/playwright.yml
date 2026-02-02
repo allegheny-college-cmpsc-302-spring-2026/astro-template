@@ -25,7 +25,7 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
       env:
-        BASE_URL: ${{ needs.call-build-and-deploy.outputs.url }}
+        BASE_URL: ${{ needs.call-build-and-deploy.outputs.BASE_URL }}
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
