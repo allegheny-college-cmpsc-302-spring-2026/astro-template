@@ -1,5 +1,8 @@
 # Portfolio Starter Kit
 
+[![Gatorgrade](../../actions/workflows/grade.yml/badge.svg?branch=main)](../../actions/workflows/grade.yml)
+[![Playwright Tests](../../actions/workflows/playwright.yml/badge.svg?branch=main)](../../actions/workflows/playwright.yml)
+
 ## Dependencies
 
 This repository uses both `node` and `python`; it contains setup for typical Allegheny College
